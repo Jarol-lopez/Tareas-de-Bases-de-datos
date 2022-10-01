@@ -1,0 +1,18 @@
+--2. Debemos hacer un bloque PL/SQL anónimo, donde declaramos una variable
+--NUMBER la variable puede tomar cualquier valor. Se debe evaluar el valor y
+--determinar si es PAR o IMPAR
+--• Como pista, recuerda que hay una función en SQL denominada MOD, que
+--permite averiguar el resto de una división. Por ejemplo MOD(10,4) nos
+--devuelve el resto de dividir 10 por 4. 
+ DECLARE  
+NUMERO number := 45;
+   
+ BEGIN
+IF
+MOD(NUMERO,2)=0
+THEN
+DBMS_OUTPUT.PUT_LINE('PAR');
+ELSE
+DBMS_OUTPUT.PUT_LINE('IMPAR');
+END IF;   
+END;
