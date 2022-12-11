@@ -1,0 +1,12 @@
+--3. Crear un bloque PL/SQL que devuelva al salario máximo del departamento 100 y lo
+--deje en una variable denominada salario_maximo y la visualice
+
+ DECLARE  
+MAXIMO_SALARIO NUMBER(10,3);
+        
+BEGIN
+SELECT MAX(SALARY) INTO MAXIMO_SALARIO FROM EMPLOYEES 
+WHERE DEPARTMENT_ID = 100 ;
+DBMS_OUTPUT.PUT_LINE('eL SALRIO MAXIMO DE LA TABLA ES ');
+DBMS_OUTPUT.PUT_LINE('='|| MAXIMO_SALARIO);
+END;
