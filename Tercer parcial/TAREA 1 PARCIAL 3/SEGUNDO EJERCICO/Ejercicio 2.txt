@@ -1,0 +1,3 @@
+SELECT date,state,tests_total,cases_positive_total from `bigquery-public-data.covid19_covidtracking.summary` LIMIT 1000
+ 
+SELECT SUM (tests_total) FROM `bigquery-public-data.covid19_covidtracking.summary` LIMIT 1000
