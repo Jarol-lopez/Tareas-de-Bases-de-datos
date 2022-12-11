@@ -1,0 +1,2 @@
+SELECT region,Country,Total_Revenue RANK() OVER(ORDER BY Total_Revenue DESC)[Rank]
+FROM  `continual-apex-371320.d.datos` LIMIT 1000 
